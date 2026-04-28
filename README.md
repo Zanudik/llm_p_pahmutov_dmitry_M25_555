@@ -3,31 +3,31 @@
 Серверное приложение на FastAPI для взаимодействия с языковой моделью через OpenRouter.
 Поддерживает регистрацию, JWT-авторизацию и сохранение истории чата в SQLite.
 
-## Установка и запуск (через uv)
+## Установка и запуск
 
 ### 1. Установить uv
-'''bash
+```bash
 pip install uv
-'''bash
+```
 ### 2. Клонировать проект и перейти в папку
-'''bash
+```bash
 git clone <ссылка-на-репозиторий>
 cd llm-p
-'''bash
+```
 ### 3. Создать виртуальное окружение и активировать
-'''bash
+```bash
 uv venv
 source .venv/bin/activate
-'''bash
+```
 
 ### 4. Установить зависимости
-'''bash
+```bash
 uv pip install -r requirements.txt
-'''bash
+```
 ### 5. Настроить .env
 Создать файл .env в корне проекта по примеру .env.example:
 
-'''bash
+```bash
 APP_NAME=llm-p
 ENV=local
 
@@ -43,23 +43,23 @@ OPENROUTER_MODEL=inclusionai/ling-2.6-1t:free
 OPENROUTER_SITE_URL=https://example.com
 OPENROUTER_APP_NAME=llm-fastapi-openrouter
 API-ключ можно получить на openrouter.ai.
-'''bash
+```
 ### 6. Запустить сервер
-'''bash
+```bash
 uv run uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+```
 Swagger-документация будет доступна по адресу: http://localhost:8000/docs
 
 Структура проекта
-text
+```bash
 app/
-├── api/            # HTTP-слой (роутеры, зависимости)
-├── core/           # Конфигурация, JWT, хеширование, ошибки
-├── db/             # База данных (модели, сессии)
-├── repositories/   # Доступ к данным (SQL)
-├── schemas/        # Pydantic-схемы
-├── services/       # Внешний клиент OpenRouter
-└── usecases/       # Бизнес-логика
+├── api/            
+├── core/           
+├── db/             
+├── repositories/   
+├── schemas/       
+├── services/       
+└── usecases/       
+```
 
-'''bash
-
-Демонстрация работы
+## Демонстрация работы
