@@ -50,7 +50,7 @@ uv run uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ```
 Swagger-документация будет доступна по адресу: http://localhost:8000/docs
 
-Структура проекта
+## Структура проекта
 ```bash
 app/
 ├── api/            
@@ -63,3 +63,29 @@ app/
 ```
 
 ## Демонстрация работы
+
+### 1. Регистрация пользователя
+![Регистрация](screenshots/register-1.png)
+![Регистрация](screenshots/register-2.png)
+![Регистрация](screenshots/register-3.png)
+
+### 2. Логин и получение JWT-токена
+![Логин](screenshots/login-1.png)
+![Логин](screenshots/login-2.png)
+![Логин](screenshots/login-3.png)
+
+### 3. Авторизация в Swagger
+![Авторизация](screenshots/authorize-1.png)
+![Авторизация](screenshots/authorize-2.png)
+
+### 4. Запрос к LLM (POST /chat)
+![Запрос к LLM](screenshots/chat-1.png)
+![Запрос к LLM](screenshots/chat-2.png)
+![Запрос к LLM](screenshots/chat-3.png)
+
+### 5. Получение истории (GET /chat/history)
+![История чата](screenshots/history-1.png)
+![История чата](screenshots/history-2.png)
+
+### 6. Удаление истории (DELETE /chat/history)
+![Удаление истории](screenshots/delete.png)
