@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Файл с секретами и токенами
+.env
+
+# База данных SQLite (может содержать личные данные)
+*.db
+
+# Кеш линтера ruff
+.ruff_cache/
+
+# Системные файлы
+.DS_Store
+Thumbs.db
